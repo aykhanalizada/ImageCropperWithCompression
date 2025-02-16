@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+    <title>Multiple Image Cropper with Compression</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Cropper.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.css">
+
+</head>
+<body>
+
+<h2>Multiple Image Cropper with Compression</h2>
+
+<!-- Select Images Button -->
+<button id="selectImagesBtn" class="button">Select Images</button>
+<input type="file" id="inputImage" multiple class="hidden">
+
+<div id="image-container"></div>
+
+<h3>Cropped & Compressed Images:</h3>
+<div id="preview"></div>
+
+<div class="buttons">
+    <button id="resetBtn" class="button">Reset All</button>
+    <button id="submitBtn" class="button-success">Submit Images</button>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"></script>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/browser-image-compression/2.0.2/browser-image-compression.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
